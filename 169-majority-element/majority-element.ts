@@ -1,3 +1,4 @@
+// Moore's voting algorithm
 function majorityElement(nums: number[]): number {
     const n = nums.length;
     let count = 0;
