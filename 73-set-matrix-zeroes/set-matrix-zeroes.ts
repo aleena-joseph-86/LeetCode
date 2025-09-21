@@ -17,7 +17,7 @@ function setZeroes(matrix: number[][]): void {
             if(matrix[i][0]===0 || matrix[0][j]===0) matrix[i][j] = 0;
 
     if(matrix[0][0] === 0)
-    for(let i = cols-1; i >= 1; i--)  matrix[0][i] = 0;
+    for(let i = 1; i < cols; i++)  matrix[0][i] = 0;
 
    if(col0===0) 
        for(let i = 0; i< rows; i++)  matrix[i][0] = 0;
