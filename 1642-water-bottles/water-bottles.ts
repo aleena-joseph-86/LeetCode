@@ -4,8 +4,8 @@ function numWaterBottles(numBottles: number, numExchange: number): number {
     let drunk = numBottles;
     while(full>0) {
     full = Math.trunc(empty/numExchange);
-    empty = full + empty%numExchange;
     drunk += full;
+    empty = full + empty%numExchange;
     }
    return drunk;
 };
