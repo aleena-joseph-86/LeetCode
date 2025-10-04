@@ -1,11 +1,12 @@
 function maxBottlesDrunk(numBottles: number, numExchange: number): number {
-    let drunk = numBottles;
+    let full = 0;
     let empty = numBottles;
+    let drunk = numBottles;
     while(empty>=numExchange) {
-        drunk += 1;
-        empty -= numExchange;
-        empty++;
-        numExchange++;
+    full = empty - numExchange + 1;
+    drunk+=1;
+    empty=full;
+    numExchange++;
     }
-    return drunk;
+   return drunk;
 };
